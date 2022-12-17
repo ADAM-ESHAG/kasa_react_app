@@ -1,0 +1,360 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+  }
+  body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    background-color: #FFFFFF;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+/*----Mobile first----*/
+
+/* DEBUT CSS PAGE LOGEMENT */
+/*-----MainLogement-----*/
+.main--logement {
+ 
+  margin: 0 20px;
+  padding-bottom: 200px;
+}
+#slider {
+  position: relative;
+}
+.slide {
+  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.5;
+  transition:  1.5s ease;
+  
+}
+.slide.active {
+  overflow: hidden;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1);
+}
+.slide img {
+  width: 750px;
+  height: 255px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+
+.right-arrow {
+  position: absolute;
+  top:  50%;
+  right: 5px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  margin-top: -20px;
+}
+.left-arrow {
+  position: absolute;
+  top:  50%;
+  left: 5px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  margin-top: -20px;
+} 
+  
+  .titre h2, .titre p {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+  }
+  .tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    list-style: none;
+  }
+  .tag {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 142.6%;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #FF6060;;
+  } 
+  
+  .host {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .host--name {
+    display: flex;
+    align-items: center;
+  }
+  .host--name h6 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142.6%;
+    text-align: right;
+    color: #FF6060;
+  }
+  .host--name img {
+    margin-left: 10px;
+    width: 50px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .description, .equipments {
+    margin: 20px 0;
+    background: #F7F7F7;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .chevron, .chevronEquipement {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background: #FF6060;
+  }
+  
+  .chevron p, .chevronEquipement p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+  
+  .equipe, .DescriptionParagraphe {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.6%;
+    color: #FF6060;
+    
+  }
+  
+  /*----Debut (About) page---*/
+  .main--about {
+    margin:0 20px;
+    padding-bottom: 200px;
+  }
+  .about--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .about--background{
+    background-image: url('/public/images/about_background.webp');
+    max-width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+  }
+  /*----Fin (About) page---*/
+
+  /*----Debut page Error----*/
+  .main--error {
+    margin-top: 50px;
+    
+  }
+  .error--container {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FF6060;
+  }
+  .error h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 142.6%;
+  }
+  .error h4 {
+    margin-top: -50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    
+  }
+  .return {
+    margin-top: 100px;
+  }
+  .return  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: #FF6060;
+    text-decoration: underline;
+  }
+
+  /*----Fin page Error----*/
+
+  /* Version tablette */
+@media only screen and (min-width: 768px){
+  .main--logement {
+    margin: 0 50px;
+  }
+  
+  .slide img {
+    width: 900px;
+    height: 400px; 
+  }
+  .right-arrow {
+    
+    right: 10px;
+  }
+  .left-arrow { 
+    left: 10px;
+  }
+
+  /*----Debut (About) page----*/
+  .main--about {
+    margin: 0 50px;
+  }
+  .about--container img {
+    height: 300px;
+  }
+
+  /*----Fin (About) page ----*/
+
+  /*----Debut page Error----*/
+  .main--error {
+    margin-top: 100px;
+  }
+
+}
+
+/* Version desktop */
+@media only screen and (min-width: 1025px){
+    .main--logement {
+      margin: 0 100px;
+      padding-bottom: 300px;
+    }
+    #slider {
+      margin: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: 500px;
+      mix-blend-mode: normal;
+      
+    }
+    .right-arrow {
+      
+      right: 20px;
+      font-size: 3rem;
+      
+    }
+    .left-arrow {
+      
+      left: 20px;
+      font-size: 3rem;
+    }
+    .informations {
+      margin: 20px 0;
+    }
+    .infos {
+        display: flex;
+        justify-content: space-between;
+    }
+    .host {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .titre h2 {
+        font-size: 36px;
+        line-height: 142.6%;
+    }
+    .host--name h6 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 142.6%;
+    }
+    .host--name img{
+        width: 80px;
+    }
+    .tag {
+        font-size: 14px;
+        line-height: 142.6%;
+    }
+    .description--equipments {
+        display: flex;
+        justify-content: space-between;    
+    }
+    
+    .chevron p, .chevronEquipement p {
+      font-size: 20px;
+      line-height: 142.6%;
+    }
+    .desc, .equi {
+        width: 48%;        
+    }
+    .DescriptionParagraphe {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 142.6%;
+    }
+    /*----Debut (About) page----*/
+    .main--about {
+      margin: 0 100px;
+    }
+    .about--container img {
+      height: 200px;  
+    }
+    .about {  
+      margin: auto 100px;
+    }
+    /*----Fin (About) page ----*/
+
+    /*----Debut page Error----*/
+    .main--error {
+      margin: 50px;
+    }
+    
+    .error h1 {
+      font-weight: 700;
+      font-size: 140px;
+    }
+    .error h4 {
+      margin-top: -80px;
+      font-size: 30px;
+      
+    }
+    .return  a {
+      font-size: 18px;
+    }
+
+    /*----Fin page Error----*/
+}

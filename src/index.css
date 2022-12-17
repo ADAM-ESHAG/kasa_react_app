@@ -1,0 +1,239 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+}
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*----Mobile first----*/
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+header {
+  margin: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--logo {
+  max-width: 100px;
+  
+}
+.nav--pages {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+}
+.nav--pages > li {
+  margin-left: 10px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 142.6%;
+  cursor: pointer;
+}
+.nav--link {
+  color: #FF6060;
+}
+
+.nav--pages > li:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+
+.background--image{
+  margin: 20px;
+  position: relative; 
+}
+.background--image img {
+  filter: brightness(70%) saturate(100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center; 
+  object-fit: cover;
+  background-size: cover;
+  height: 111px;
+  width: 100%;
+  border-radius: 15px; 
+}
+.background--image h2 {
+  position: absolute;
+  left: 9.6%;
+  top: 14.04%;
+  bottom: 80.05%;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+/*----Main content----*/
+
+.mainContent {
+  
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 20px;
+  padding-bottom: 200px;
+  
+}
+ a {
+  text-decoration: none;
+}
+.logement {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  margin:10px 0;
+  border-radius: 15px;
+  
+}
+
+.logement img {
+  height: 300px;
+  width: 100%;
+  filter: brightness(80%) saturate(100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center; 
+  object-fit: cover;
+  background-size: cover;
+  
+}
+
+.title {
+  position: absolute;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 142.6%;
+  margin: -80px 10px 60px 10px;
+}
+
+/*-----Footer----*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000000;
+}
+.footer--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 50px;
+}
+.footer--logo {
+  width: 100px;
+  filter: brightness(0) invert(1);
+}
+
+
+/* Version tablette */
+@media only screen and (min-width: 768px){
+  header {
+    margin: 20px 50px;
+  }
+  .nav--pages > li {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .background--image{
+    margin: 20px 50px;
+  }
+  .background--image img {
+    height: 223px;
+  }
+  .background--image h2 {
+    left: 25.9%;
+    right: 25.14%;
+    top: 25.32%;
+    bottom: 69.04%;
+    text-align: center;
+  }
+  /* Main Content */
+  .mainContent {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 50px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding-bottom: 250px;
+    
+  }
+  .logement {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    margin: 20px;    
+  }
+  .logement img {
+    border-radius: 15px;
+  }  
+}
+
+/* Version desktop */
+@media only screen and (min-width: 1025px){
+  header {
+    margin: 50px 100px 10px 100px;
+  }
+  .nav--logo {
+    max-width: 200px; 
+  }
+  .nav--pages > li {
+    margin-right: 0;
+    font-size: 24px;
+    line-height: 142.6%;
+  }
+  .background--image {
+    margin: 50px 100px auto 100px;
+  }
+  .background--image img {
+    height: 223px;
+    border-radius: 25px;
+  }
+  .background--image h2 {
+    left: 25.9%;
+    right: 25.14%;
+    top: 24.32%;
+    bottom: 69.04%;
+    font-size: 34px;
+    line-height: 142.6%;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 300px;
+  }
+  
+  .logement {
+    height: 300px;
+    width: 350px;
+    margin: 50px 30px 10px 30px;   
+  }  
+  .logement img {
+    border-radius: 10px;
+  }
+}
