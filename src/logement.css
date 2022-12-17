@@ -72,6 +72,9 @@ html, body {
   user-select: none;
   margin-top: -20px;
 } 
+.compteur-galerie {
+  display: none;
+}
   
   .titre h2, .titre p {
     display: flex;
@@ -226,8 +229,9 @@ html, body {
   }
   
   .slide img {
-    width: 900px;
-    height: 400px; 
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px; 
   }
   .right-arrow {
     
@@ -279,6 +283,18 @@ html, body {
       
       left: 20px;
       font-size: 3rem;
+    }
+    .compteur-galerie {
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      z-index: 10;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 142.6%;
+      color: #FFFFFF;
     }
     .informations {
       margin: 20px 0;

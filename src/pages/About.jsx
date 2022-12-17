@@ -1,6 +1,6 @@
-import {Navbar} from "./Navbar"
-import {MainAbout} from "./MainAbout"
-import {Footer} from "./Footer"
+import {Navbar} from "../components/Navbar"
+import {MainAbout} from "../components/MainAbout"
+import {Footer} from "../components/Footer"
 
 export function About() {
     return (

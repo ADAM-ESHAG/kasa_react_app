@@ -1,8 +1,8 @@
 //---Home page---//
-import {Navbar} from "./Navbar"
-import {MainContent} from "./MainContent"
-import {Footer} from "./Footer"
-import data from "./data"
+import {Navbar} from "../components/Navbar"
+import {MainContent} from "../components/MainContent"
+import {Footer} from "../components/Footer"
+import data from "../components/data"
 export function Home() {
 
     const myData = data.map(item => {

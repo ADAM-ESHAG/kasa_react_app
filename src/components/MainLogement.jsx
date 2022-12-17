@@ -70,8 +70,9 @@ export function MainLogement() {
         return (
                 <>
                     <div id="slider">
-                        <FontAwesomeIcon icon={faChevronLeft} className='left-arrow' onClick={prevuSlide} />
-                        <FontAwesomeIcon icon={faChevronRight} className='right-arrow' onClick={nextSlide} />
+                        {length > 1 ? <FontAwesomeIcon icon={faChevronLeft} className='left-arrow' onClick={prevuSlide} /> : ''}
+                        {length > 1 ? <FontAwesomeIcon icon={faChevronRight} className='right-arrow' onClick={nextSlide} /> : ''}
+                        {length > 1 ? <div className='compteur-galerie'> {current + 1}/{length}</div> : ''}
                         {slidePictures.map((item, index) => {
 
                             return (

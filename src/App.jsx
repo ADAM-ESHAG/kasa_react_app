@@ -1,11 +1,10 @@
 
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import {Home} from './components/Home'
-import {About} from './components/About'
-import {Logement} from './components/Logement'
-import {Error} from './components/Error'
+import {Home} from './pages/Home'
+import {About} from './pages/About'
+import {Logement} from './pages/Logement'
+import {Error} from './pages/Error'
 import {React} from "react";
-import { ReactDOM } from "react-dom";
 
 
 export function App() {

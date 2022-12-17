@@ -1,8 +1,8 @@
 //----Logement components----//
 
-import {Navbar} from "./Navbar"
-import {MainLogement} from "./MainLogement"
-import {Footer} from "./Footer"
+import {Navbar} from "../components/Navbar"
+import {MainLogement} from "../components/MainLogement"
+import {Footer} from "../components/Footer"
 
 export function Logement() {
 
