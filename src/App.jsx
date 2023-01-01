@@ -12,7 +12,7 @@ export function App() {
     
       <Router>
         <Routes>
-          <Route exct path='/' element={<Home />}></Route>
+          <Route exact path='/' element={<Home />}></Route>
           <Route path='/About' element={<About />}></Route>
           <Route path='Logement/:id' element={<Logement />}></Route>
           <Route path='*' element={<Error />}></Route>  

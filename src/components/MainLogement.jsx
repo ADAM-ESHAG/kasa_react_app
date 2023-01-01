@@ -24,6 +24,9 @@ export function MainLogement() {
     
     const affiche = Data.find(elem => elem.id === params.id);
     if(affiche) {
+        
+        let slidePictures = affiche.pictures;
+        const length = slidePictures.length //---Langueur de l'Array des images
 
         //----Function nextSlide permet de changer l'image vers la droit---//
         const nextSlide = () => {
@@ -37,8 +40,6 @@ export function MainLogement() {
         }
         
         //---Maper tags----//
-        let slidePictures = affiche.pictures;
-        const length = slidePictures.length //---Langueur de l'Array des images
         const tags = affiche.tags;
         const tag = tags.map(item => {
             return (
